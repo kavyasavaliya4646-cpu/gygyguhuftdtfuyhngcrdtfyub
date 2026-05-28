@@ -1,0 +1,254 @@
+:root {
+  color-scheme: dark;
+  font-family: 'Inter', ui-sans, system-ui, sans-serif;
+  background: #070b14;
+  color: #f8fafc;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  background: radial-gradient(circle at top left, rgba(56, 189, 248, 0.15), transparent 30%),
+    radial-gradient(circle at bottom right, rgba(168, 85, 247, 0.15), transparent 30%),
+    #070b14;
+}
+
+button, input {
+  font: inherit;
+}
+
+.app-shell {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.brand-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  margin-bottom: 24px;
+  padding: 24px;
+  border: 1px solid rgba(148, 163, 184, 0.12);
+  border-radius: 24px;
+  background: rgba(15, 23, 42, 0.85);
+}
+
+.eyebrow {
+  margin: 0 0 8px;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: #7dd3fc;
+}
+
+.brand-bar h1 {
+  margin: 0;
+  font-size: clamp(2rem, 2.5vw, 2.8rem);
+}
+
+.subtitle {
+  margin: 10px 0 0;
+  color: #94a3b8;
+  max-width: 720px;
+}
+
+.header-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+}
+
+.button {
+  border: none;
+  cursor: pointer;
+  border-radius: 14px;
+  padding: 12px 18px;
+  font-weight: 600;
+}
+
+.button-solid {
+  background: #2563eb;
+  color: white;
+}
+
+.button-danger {
+  background: #dc2626;
+  color: white;
+}
+
+.button.small {
+  padding: 8px 12px;
+  font-size: 0.9rem;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.stat-card {
+  padding: 20px;
+  border-radius: 22px;
+  border: 1px solid rgba(148, 163, 184, 0.12);
+  background: rgba(15, 23, 42, 0.88);
+}
+
+.stat-label {
+  margin: 0 0 6px;
+  color: #94a3b8;
+  font-size: 0.95rem;
+}
+
+.stat-value {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.stat-sub {
+  margin: 8px 0 0;
+  color: #86efac;
+  font-size: 0.95rem;
+}
+
+.panel {
+  margin-bottom: 24px;
+  padding: 24px;
+  border-radius: 24px;
+  border: 1px solid rgba(148, 163, 184, 0.12);
+  background: rgba(15, 23, 42, 0.78);
+}
+
+.panel-heading {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 18px;
+}
+
+.panel-heading.spaced {
+  align-items: flex-end;
+}
+
+.panel-heading h2 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.panel-heading p {
+  margin: 8px 0 0;
+  color: #94a3b8;
+}
+
+.form-grid,
+.search-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+}
+
+.field-block {
+  display: grid;
+  gap: 8px;
+}
+
+.field-block span {
+  color: #cbd5e1;
+  font-size: 0.95rem;
+}
+
+.field-block input {
+  width: 100%;
+  border: 1px solid rgba(148, 163, 184, 0.16);
+  border-radius: 16px;
+  padding: 12px 14px;
+  background: rgba(15, 23, 42, 0.96);
+  color: #f8fafc;
+}
+
+.search-input {
+  width: 100%;
+  min-height: 54px;
+  border: 1px solid rgba(148, 163, 184, 0.16);
+  border-radius: 16px;
+  padding: 14px 16px;
+  background: rgba(15, 23, 42, 0.96);
+  color: #f8fafc;
+}
+
+.panel-footer {
+  margin-top: 20px;
+}
+
+.table-wrap {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 900px;
+}
+
+thead th {
+  text-align: left;
+  padding: 14px 12px;
+  color: #94a3b8;
+  border-bottom: 1px solid rgba(148, 163, 184, 0.16);
+}
+
+tbody tr:hover {
+  background: rgba(148, 163, 184, 0.06);
+}
+
+td {
+  padding: 12px;
+  border-bottom: 1px solid rgba(148, 163, 184, 0.08);
+}
+
+.table-input {
+  width: 100%;
+  border: 1px solid rgba(148, 163, 184, 0.16);
+  border-radius: 14px;
+  background: rgba(15, 23, 42, 0.96);
+  color: #f8fafc;
+  padding: 10px 12px;
+}
+
+.empty-state {
+  padding: 24px;
+  border-radius: 18px;
+  border: 1px dashed rgba(148, 163, 184, 0.18);
+  color: #94a3b8;
+  text-align: center;
+}
+
+@media (max-width: 780px) {
+  .brand-bar,
+  .panel,
+  .stats-grid {
+    padding: 18px;
+  }
+
+  .header-actions {
+    width: 100%;
+  }
+
+  .button {
+    width: 100%;
+  }
+}
